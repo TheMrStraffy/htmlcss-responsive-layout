@@ -64,6 +64,9 @@ header .container .logo,.menu{
 .first-section .box{
   margin-bottom: 1.3rem;
 }
+.first-section .container .row-one .box .col{
+  flex-direction: column;
+}
 .first-section .box:first-child{
   padding-bottom: 0;
 }
@@ -89,9 +92,7 @@ header .container .logo,.menu{
 
 .second-section{
   background-color: #9792e4;
-}
-.second-section .development{
-  margin-bottom: 3.5rem;
+  padding: 3rem 0;
 }
 .second-section .container .box img{
   width: 100%;
@@ -168,6 +169,10 @@ footer {
 /* For tablets */
 @media screen and (min-width: 480px) {
   /* FIRST */
+
+  .first-section .container .row-one .box .col{
+    flex-direction: column;
+  }
   .first-section .container .row-one, .row-two{
     display: flex;
     justify-content: space-between;
@@ -214,15 +219,46 @@ footer {
 
 /* For Desktops */
 @media screen and (min-width: 780px){
-  /* .first-section .container .row-one .box:first-child{
+  /* FIRST */
+  .first-section .container .row-one .box{
     flex-direction: row;
     
-  }
-  .first-section .col{
     width: calc(100% / 2);
-    justify-content: space-between;
+  }
+  .first-section .container .row-one .box .col{
     flex-direction: column;
-  } */
-
+    justify-content: space-between;
     
+  }
+  .first-section .container .row-one .box .col img{
+    width: 100%;
+  }
+/* SECOND */
+  .second-section .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .second-section .container .box{
+    flex-direction: column;
+    width: calc(80% / 2);
+  }
+  .second-section .container .box:first-child img{
+    padding: 2rem 0;
+  }
+  .second-section .container .box:last-child{
+    align-self: flex-end;
+    text-align: center;
+    width: 30%;
+  }
+  .second-section .container .box:last-child img{
+    width: 50%;
+  }
+  
+  /* THIRD */
+  
+  /* FOURTH */
+  .fourth-section .container .box{
+    width: calc(95% /3);
+  }
 }
