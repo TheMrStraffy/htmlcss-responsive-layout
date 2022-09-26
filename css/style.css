@@ -3,3 +3,131 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* UTILITIES */
+.d-flex{
+  display: flex;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.first-section .box{
+  flex-direction: column;
+  width: 100%;
+  background-color: #b5ddff;
+}
+main .container{
+  flex-direction: column;
+}
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.box{
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 2rem;
+}
+.btn{
+  border-radius: 25px;
+}
+
+/* HEADER */
+header{
+  background-color: #0084fd;
+  height: 75px;
+  margin-bottom: 3rem;
+}
+
+header .container{
+  justify-content: space-between;
+  height: 100%;
+}
+header .container .logo,.menu{
+  align-items: center;
+}
+.menu .fa-bars{
+  font-size: 2rem;
+  color: white;
+}
+
+/* FIRST SECTION */
+.first-section .box{
+  margin-bottom: 1.3rem;
+}
+.first-section .box:first-child{
+  padding-bottom: 0;
+}
+.first-section .box:last-child{
+  margin-bottom: 2rem;
+}
+.first-section .box .text{
+  padding-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+.first-section .box img{
+  width: 50%;
+}
+.first-section .box .btn{
+  align-self: flex-start;
+  background-color: #0084fd;
+  color: white;
+  width: 60%;
+  height: 35px;
+  text-align: center;
+}
+/* SECOND SECTION */
+
+.second-section{
+  background-color: #9792e4;
+}
+.second-section .development{
+  margin-bottom: 3.5rem;
+}
+.second-section .container .box img{
+  width: 100%;
+  text-align: center;
+}
+.second-section .container .development{
+  background-color: white;
+}
+
+/* THIRD SECTION */
+.third-section{
+  margin: 3rem 0;
+}
+.third-section .container .box{
+background-color: #9792e4;
+flex-direction: column;
+margin-bottom: 1.5rem;
+}
+.image-cropped{
+  width: 80%;
+  
+}
+.third-section .container .box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+/* FOURTH SECTION */
+.fourth-section{
+  background-color: #9792e4;
+  padding: 3rem 0;
+}
+.fourth-section .container{
+  align-items: center;
+}
+.fourth-section .container .box{
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
